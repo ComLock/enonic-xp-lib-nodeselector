@@ -35,6 +35,7 @@ export function get({
 		cmsRepoBranch = 'master',
 		count,
 		exclude,
+		filtersJson,
 		ids = '[]', // NOTE Json
 		include,
 		login,
@@ -51,6 +52,7 @@ export function get({
 		cmsRepoBranch,
 		count,
 		exclude,
+		filtersJson,
 		ids,
 		include,
 		login,
@@ -140,6 +142,7 @@ export function get({
 	const mRC = multiRepoConnect({sources});
 	const queryParams = {
 		count,
+		filters: filtersJson ? JSON.parse(filtersJson) : {},
 		query: query
 			.split(' ')
 			.map(word => `(

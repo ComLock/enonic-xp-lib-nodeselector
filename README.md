@@ -18,7 +18,34 @@
 			<!--param value="userStore">system</param--><!-- default is current user userstore -->
 			<!--param value="principals">role:system.admin</param--><!-- default is current user principals -->
 
+			<!--param value="filtersJson">...</param>
+
 			<!-- Optional ...Rest params value is repoId and content is branch -->
 			<!--param value="com.enonic.app.myapp">master</param-->
 		</config>
 	</input>
+
+## Compatibility
+
+| Lib version | XP version |
+| ----------- | ---------- |
+| 1.[01].0 | 6.14.0 |
+
+## Changelog
+
+### 1.1.0
+
+* Added filtersJson
+
+### 1.0.0
+
+* First release of library that includes the following params:
+* systemRepo
+* cmsRepo
+* cmsRepoBranch
+* include
+* exclude
+* login
+* userStore
+* principals
+* ...rest
