@@ -2,6 +2,11 @@
 
 ## Usage
 
+	include 'com.enonic.lib:nodeselector:1.1.0'
+	include "com.enonic.xp:lib-context:${xpVersion}"
+	include "com.enonic.xp:lib-node:${xpVersion}"
+	include "com.enonic.xp:lib-repo:${xpVersion}"
+
 	<input name="myName" type="CustomSelector">
 		<label>My label</label>
 		<occurrences minimum="0" maximum="0"/>
